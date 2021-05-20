@@ -1,6 +1,6 @@
 # Python NTP server
 # https://github.com/limifly/ntpserver/blob/master/ntpserver.py
-# Made minor changes to make it work in Python 2:
+# Made minor changes to make it work in Python 3:
 # instead of 'Queue', the module name is now all lower case 'queue'
 # import mutex is not needed
 # put print statements in parantheses
