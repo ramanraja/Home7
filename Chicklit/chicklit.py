@@ -1,5 +1,5 @@
 # parse multiple file URLs, separate author name and title
-# new in this version: the input must be a XLSfile; TODO:  merge with the CSV version and 
+# new in this version: the input must be a CSV file; TODO:  merge with the XLS version and 
 #     read either file format
 # https://stackoverflow.com/questions/7372716/parsing-excel-documents-with-python
 # Assumption: the script and the data file are in the same directory.
