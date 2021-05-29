@@ -14,7 +14,7 @@
 #define TX_BUFFER_SIZE    48        // NTP packets are 48 bytes long
 #define RX_BUFFER_SIZE    64        // NTP clients can follow some strange protocols         
 #define FIRST_BYTE        0x1C      // magic constant, see NTP protocol header
-#define TS_STARTING_BYTE  40        // bytes 40,41,42,43 are the time stamp 44 to 47 can be filled with zeros
+#define TS_STARTING_BYTE  40        // bytes 40,41,42,43 are the time stamp; 44 to 47 can be filled with zeros
  
 #define MOCK_TS    3830932228UL     // a valid unix time stamp; for testing the server when an RTC module is not available
 unsigned long ts_counter = MOCK_TS;  
