@@ -1,5 +1,5 @@
 // keys.h
-// Keep this file secret: NEVER upload it to any code repository like Github !
+// Keep this file secret 
 
 #ifndef KEYS_H
 #define KEYS_H
