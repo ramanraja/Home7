@@ -5,7 +5,7 @@
 import os 
 import glob
 
-base_dir = 'E:\NewRaja1\Work2\Python\I\Database\lambda_env_package'
+base_dir = 'D:\MyProjects\Python\Databases\'
 base_pattern = base_dir + '/**/__pycache__'
 
 # iglob returns an iterator
