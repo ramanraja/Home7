@@ -53,7 +53,7 @@ class Device ():
         self.table.insert (dev4)
         self.table.insert (dev5)
         self.table.insert (dev6)
-        self.table.insert (dev11)         
+        #self.table.insert (dev11)         
         print ('6 test devices added.')
  
     
