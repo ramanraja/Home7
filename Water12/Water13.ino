@@ -1,14 +1,18 @@
 // water13.ino
 /*
  * TODO:
- * Two boxes, one inside the other
- * cables should be securely fastened to the side of the box with a sticky tab and zip tie
- * LED should be stuck to the outer box, visible in daylight also
- * change KEEP_ALIVE_INTERVAL from 1 minute to to 5 minutes ***
- * If network is not available at the beginning, try to connect again
- * ability to reboot remotely
- * remote command to blink the LED for testing
- * remotely enable/disable serial logging
+ * Hardware:
+   * Two boxes, one inside the other
+   * cables should be securely fastened to the side of the box with a sticky tab and zip tie
+   * LED should be stuck to the outer box, visible in daylight also
+ * Software:
+   * change KEEP_ALIVE_INTERVAL from 1 minute to to 5 minutes ***
+   * If network is not available at the beginning, try to connect again
+   * ability to reboot remotely
+   * remote command to blink the LED for testing
+   * remotely enable/disable serial logging
+   * configure all polling intervals remotely
+  * Sleep mode
  * */
  */
 /*------------------------------------------------------------------------------------------
