@@ -1,0 +1,22 @@
+<html>
+   <body>
+      <h4>Configure Device</h4>
+      <form action = "/device"  method = "POST">
+         <p>Device ID: 
+         
+         <select name="device_id" id="device_id">
+              <option value="TOF_AA1356">TOF-AA1356</option>
+              <option value="TOF_BB5678">TOF-BB5678</option>
+              <option value="TOF_CC8976">TOF-CC8976</option>
+        </select> </p>
+
+         <p>Room name: <br/> <input type = 'text' name = 'room_name' value='Bed Room'></p>
+         <hr/>      
+         <p>Relay1: <br/> <input type = 'text' name = 'relay1'/></p>
+         <p>Relay2: <br/> <input type = 'text' name = 'relay2'/></p>      
+         <p>Relay3: <br/> <input type = 'text' name = 'relay3'/></p>      
+         <p>Relay4: <br/> <input type = 'text' name = 'relay4'/></p>  
+         <p><input type = 'submit' value = 'Submit'/></p>
+      </form>
+   </body>
+</html>
