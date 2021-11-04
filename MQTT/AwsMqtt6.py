@@ -1,6 +1,6 @@
 # This simple example creates a connection to the AWS IoT endpoint and publishes a message to it.
 # This version works well: See the published messages on AWS IoT console under Test tab on the left nav bar.
-# You can use this program to send health check queires to Tasmota devices and print their response.
+# You can use this program to send health check queries to Tasmota devices and print their response.
 # Uses certificates generated using AWS Console
 # https://aws.amazon.com/blogs/iot/how-to-implement-mqtt-with-tls-client-authentication-on-port-443-from-client-devices-python/
 # https://aws.amazon.com/jp/blogs/iot/mqtt-with-tls-client-authentication-on-port-443-why-it-is-useful-and-how-it-works/
@@ -34,7 +34,7 @@ private_key = "../credentials/Ohio-private.key"
 # globals
 terminate = False
 mqtt = None
-pub_topic = "cmnd/IN-999999/TOF-888888/POWER2"     # publish on this
+pub_topic = "cmnd/IN-999999/TOF-888888/POWER0"     # publish on this
 sub_topic_lwt = "tele/+/+/LWT"                     # listen on this
 sub_topic_status = "stat/#"     
 CMD_PREFIX = 'cmnd'                      
