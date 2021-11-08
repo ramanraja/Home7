@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Tasmota Wifi Setup</h2>
+
+WiFi SSID:  <input type="text" id="ssid1">  <br/><br/> 
+Password: <input type="text" id="pass1">  <br/><br/> 
+<input type="submit" id="submitBtn"/>  
+
+<p>1. If this is not the first time you are setting up WiFi, press the button on your IoT device for about 5 seconds.</p>
+<p>2. A Wifi AP of the form intof-xxxx will be activated.</P>
+<p>3. Connect your Wifi enabled laptop to the intof-xxxx network.</p>
+<p>4. Enter your home router's SSID and Wifi password in the text boxes above and submit.</p>
+<p>5. The IoT device will automatically restart and connect to your home router's Wifi network.</p>
+<p>6. Connect your laptop back to your home network.</p>
+<p>7. If you made a mistake, press the button on the device for 5 seconds. This will reset the Wifi data. Then repeat the above steps.</p>
+<br/>
+<p id="display"></p>
+  <script>
+     document.getElementById("submitBtn").addEventListener("click", myFunction);  
+     function myFunction() {  
+        let ss= document.getElementById("ssid1").value;
+        let pw= document.getElementById("pass1").value;
+        var url="http://192.168.4.1/cm?cmnd=backlog ssid1 "+ss +";password1 " +pw
+	var destination = encodeURI(url);
+        //document.getElementById("display").innerHTML = destination
+        console.log (destination)
+        window.location.href=destination
+     }
+  </script>
+
+</body>
+</html>
+
