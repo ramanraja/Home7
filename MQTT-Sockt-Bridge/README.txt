@@ -1,0 +1,1 @@
+bridges between AWS MQTT broker and SocketIO sockets

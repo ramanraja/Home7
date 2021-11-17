@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Flask-SocketIO</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.min.js" 
+	crossorigin="anonymous"></script>
+	<script src="static/buttons_socket.js"></script>
+</head>	
+<body>
+	<h3>MQTT-SocketIO Bridge</h3>
+	Messages appear in the developer console (F12).<br/><br/>
+	<button onclick="send_to_socket(1)" id="POWER1" style="width:100px; height:100px; border-radius:12px;">POWER1</button>
+	<button onclick="send_to_socket(2)" id="POWER2" style="width:100px; height:100px; border-radius:12px;">POWER2</button>
+	<button onclick="send_to_socket(3)" id="POWER3" style="width:100px; height:100px; border-radius:12px;">POWER3</button>
+	<button onclick="send_to_socket(4)" id="POWER4" style="width:100px; height:100px; border-radius:12px;">POWER4</button>
+	<p id="response_para"></p>
+</body>
+</html>
+	
+
+ 
+
+	
