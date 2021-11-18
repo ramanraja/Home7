@@ -34,7 +34,7 @@ def on_connect (client, userdata, flags, rc):
         client.subscribe (topic, qos=qos)
  
 def on_disconnect (client, userdata, rc):
-    print('MQTT broker disconnected: ', aws_iot_endpoint)
+    print('\n* MQTT broker disconnected *\n')
     
 def on_publish (client, userdata, mid):
     print(f'Published msg id: {mid}')   
