@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+/* Even if ServarVar is not a JSON object, you must have '| tojson' directive
+   Otherwise the braces are html-encoded and raise an error
+ */
+var devices = {{ServerVar | tojson}};
+console.log('Your devices:');
+console.log(devices);
+window.onload = function () {
+    var dropdn = document.getElementById("device_id");
+    for(var i = 0; i < devices.length; i++) {
+        var option = document.createElement('option');
+        option.text = option.value = devices[i];  
+        dropdn.add(option, 0);
+    }
+};
+</script>
+</head>
+   <body>
+      <h4>Configure Device</h4>
+      <form action = "/config/device"  method = "POST">
+	     
+         <p>Device ID: 
+         <select name="device_id" id="device_id"> </select> </p>
+
+         <p>Room name: <br/> <input type = 'text' name = 'room_name' value='Bed Room'></p>
+         <hr/>      
+         <p>Gadget1: <br/> <input type = 'text' name = 'POWER1'/></p>
+         <p>Gadget2: <br/> <input type = 'text' name = 'POWER2'/></p>      
+         <p>Gadget3: <br/> <input type = 'text' name = 'POWER3'/></p>      
+         <p>Gadget4: <br/> <input type = 'text' name = 'POWER4'/></p>  
+         <p><input type = 'submit' value = 'Submit'/></p>
+      </form>
+   </body>
+</html>
